@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hiring-Workflow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+ <body>
+		<h1>Hiring Workflow</h1>
+
+	<section> 
+		<h2>Job Applications</h2>
+		<form id="applicationForm">
+			<label for="candidateName">Candidate Name:</label>
+			<input type="text" id="candidateName" name="candidateName" required>
+			
+			<label for="jobRole">Job Role: </label>
+			<input type="text" id="jobRole" name="jobRole" required>
+			
+			<label for="currentStatus">Current Status: </label>
+			<input type="text" id="currentStatus" name="currentStatus" required>
+			
+			<button type="submit">Job Submission </button>
+		</form>
+        <table>
+			<thead>
+				<tr>
+					<th>Candidate Name</th>
+					<th>Job Role</th>
+					<th>Current Status</th>
+				</tr>
+			</thead>
+		    <tbody id="applicationsTable"></tbody>
+		</table>
+	</section>
+	
+	
+	<section>
+		<h2>Resume Screening</h2>
+		<form id="resumeReviewForm">
+			<label for="candidateResume">Candidate Name:</label>
+			<input type="text" id="candidateResume" name="candidateResume" required>
+			
+			<label for="resumeFile">Upload Resume: </label>
+			<input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx" required>
+			
+			<label for="resumeStatus">Resume Screening Status:</label>
+			<select id="resumeStatus" name="resumeStatus" required>
+			<option value="Approved">Approved</option>
+			<option value="Rejected">Rejected</option>
+			<select>
+				
+			<button type="submit">Submit Screening Process</button>
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th>Candidate Name</th>
+					<th>Resume Screening Status</th>
+				</tr>
+			</thead>
+			<tbody id="ResumeScreeningTable"></tbody>
+		</table>
+	 </section>
+	
+	
+	 <section>
+		 <h2>Scheduling Interviews</h2>
+		 <form id="interviewForm">
+			<label for="jobSeeker">Candidate Name:</label>
+			<input type="text" id="jobSeeker" name="jobSeeker" required>
+			
+			<label for="interviewDate">Date: </label>
+			<input type="text" id="interviewDate" name="interviewDate" required>
+			
+			<label for="interviewTime">Time: </label>
+			<input type="text" id="interviewTime" name="interviewTime" required>
+			
+			<button type="submit">Schedule Interview </button>
+		</form>
+        <table>
+			<thead>
+				<tr>
+					<th>Candidate Name</th>
+					<th>Date</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+		    <tbody id="interviewsTable"></tbody>
+		</table>
+	</section>
+	
+	
+	<section>
+		 <h2>Collect Feedback</h2>
+		 <form id="feedbackForm">
+			<label for="candidateFeedback">Candidate Name:</label>
+			<input type="text" id="candidateFeedback" name="candidateFeedback" required>
+			
+			<label for="feedbackReviewer">Reviewer Name: </label>
+			<input type="text" id="feedbackReviewer" name="feedbackReviewer" required>
+			
+			<label for="feedbackComment">Feedback: </label>
+			<textarea id="feedbackComment" name="feedbackComment" rows="5" required></textarea>
+			
+			<button type="submit">Feedback Section </button>
+		</form>
+        <table>
+			<thead>
+				<tr>
+					<th>Candidate Name</th>
+					<th>Reviewer</th>
+					<th>Feedback</th>
+				</tr>
+			</thead>
+		    <tbody id="feedbackTable"></tbody>
+		</table>
+	</section>
+	
+	
+	
+	<section>
+		 <h2>Offer Letters</h2>
+		 <form id="offerLetterForm">
+			<label for="selectedCandidate">Candidate Name:</label>
+			<input type="text" id="selectedCandidate" name="selectedCandidate" required>
+			
+			<label for="offerLetterTitle">Job Title: </label>
+			<input type="text" id="offerLetterTitle" name="offerLetterTitle" required>
+			
+			<label for="compensation">Compensation: </label>
+			<input type="text" id="compensation" name="compensation" required>
+			
+			<button type="submit">Send Offer Letter</button>
+		</form>
+        <table>
+			<thead>
+				<tr>
+					<th>Candidate Name</th>
+					<th>Job Title</th>
+					<th>Compensation</th>
+				</tr>
+			</thead>
+		    <tbody id="offerLettersTable"></tbody>
+		</table>
+	</section>
+		
+</body>
+</html>
